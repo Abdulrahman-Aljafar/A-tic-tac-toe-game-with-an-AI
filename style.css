@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ 
+
+  .main-page{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+     url(./image/tic-tac-toe-pattern-blue-background-chaotic-sample-74834641.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+  }
+
+  .welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+
+  .welcome-text h1 {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 60px;
+}
+
+.Tac{
+    color: #0f8392
+}
+
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+
+  .main-index{
+    color: #545454;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+  }
+
+  .container {
+    
+    margin: 50px;
+    margin-top: 0px;
+    padding: 50px;
+   
+  }
+
+  
+  .title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 70px;
+
+  }
+
+  
+  
+  .status-action {
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    justify-content: space-around;
+    height: 30px;
+  }
+  
+
+  
+  .reset {
+    cursor: pointer;
+  }
+  
+  .reset:hover {
+    color: #e2dac0;
+  }
+  
+  .game-grid {
+    background: #000000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
+  
+  .game-cell {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+  }
+
+  .game-cell:hover {
+    background-color: #f3f3f2;
+    
+  }
+
+  
+
+  .x-s{
+     color: rgb(0, 25, 134);
+     height: 170px;
+     width: 170px;
+     padding: 60px 10px;
+     border:1.5px solid rgb(122, 122, 122);
+     border-radius: 25px;
+     margin-bottom: 10px;
+
+  }
+
+  .o-s{
+    color: rgb(153, 2, 2) ; 
+    height: 170px;
+    width: 170px;
+    padding: 60px 10px;
+    border:1.5px solid rgb(122, 122, 122);
+    border-radius: 25px;
+ }
+
+ .score{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5px;
+  width: 300px;
+   
+ }
+
+ .win{
+  animation-name: changeColor  ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+ }
+
+ @keyframes changeColor{
+
+  0%{
+    background-color: rgba(152, 240, 174, 0.904);
+
+}
+
+  50%{
+      background-color: rgba(101, 221, 131, 0.904);
+  
+  }
+  50%{
+    background-color: rgba(49, 190, 84, 0.904);
+
+}
+  100%{
+      background-color: rgba(7, 179, 44, 0.904);
+  }
+
+      
+  }
